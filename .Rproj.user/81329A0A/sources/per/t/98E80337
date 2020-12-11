@@ -1,0 +1,24 @@
+{
+    "id": "98E80337",
+    "path": "~/Dropbox/__PROJECTS/snippets_sanctuary/app.R",
+    "project_path": "app.R",
+    "type": "r_source",
+    "hash": "3078230441",
+    "contents": "",
+    "dirty": false,
+    "created": 1607704872828.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "72,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1607702876,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1607702876,
+    "read_only": false,
+    "read_only_alternatives": []
+}
