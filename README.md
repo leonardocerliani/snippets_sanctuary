@@ -2,5 +2,5 @@ Something that I wanted to do for a long time... An online [Shiny app](https://s
 
 This is ver 0.0.1Beta (basically I started a couple of hours ago). Many things to do still...
 
-![](demo.gif)
+![](snippets_sanctuary.gif)
 
