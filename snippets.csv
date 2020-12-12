@@ -5,3 +5,15 @@
 "bash simple loop","for i in caterina gabi magkaki; do
 	I love ${i}
 done"
+"bash arrays","# create an array
+arr=()
+
+# add elements in a loop
+for i in 1 2 3 4 5; do 
+	arr+=(${i})
+done
+
+# print the array elements in different lines
+printf ""%s\n"" ${arr[@]}
+
+"

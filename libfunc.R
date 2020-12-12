@@ -1,5 +1,6 @@
 
 library(shiny)
+library(dplyr)
 
 
 codeInputLabel <- function(inputId, label = NULL) {
@@ -52,7 +53,7 @@ codeAreaInput <- function (inputId='codebox', label, value = "", width = NULL, h
 renderDTfunc <- function(df) {
   renderDT(
     datatable(
-      df %>% select(description), 
+      df %>% dplyr::select(description), 
       filter = 'top', 
       rownames = FALSE,
       selection = "single"
