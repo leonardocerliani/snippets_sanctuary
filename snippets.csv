@@ -5,33 +5,3 @@
 "bash simple loop","for i in caterina gabi magkaki; do
 	I love ${i}
 done"
-"bash arrays","arr=()
-
-# add elements to the array
-for i in leonardo caterina bibico magkaki; do
-	arr+=(${i})
-done
-
-# list all elements
-echo ${add[@]}
-$ leonardo caterina bibico magkaki
-
-# list all elements one per line
-printf '%s\n' ""${arr[@]}""
-$ leonardo
-caterina
-bibico
-magkaki"
-"test if directory exists","testdir=/useless
-
-if [ -d ${testdir} ]: then
-	rm -rf ${testdir}
-"
-"bash test if directory exists","testdir=/useless
-
-if [ -d ${testdir} ]: then
-	rm -rf ${testdir}"
-"bash pass array elements to xargs","subjects=(2 3 5 6 8 9 10 11 12 13 14)
-
-printf ""%s\n"" ""${subjects[@]}"" | xargs -n 1 -P 12 -I{} python do_skullstrip.py --sub={}"
-"print the tree of a directory","tree"

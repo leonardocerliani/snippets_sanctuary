@@ -60,6 +60,7 @@ server <- function(input, output, session) {
         ) 
     )
     
+
     
     # Show selected snippet
     output$selectedSnippet <- renderText({

@@ -38,7 +38,7 @@ codeAreaInput <- function (inputId='codebox', label, value = "", width = NULL, h
     tags$textarea(
       id = inputId, class = "form-control", 
       placeholder = placeholder, 
-      style = "font-family: monospace; tab-size: 3;", 
+      style = "font-family: monospace; tab-size: 3;",
       rows = rows, 
       cols = cols, value
     ),
@@ -48,7 +48,17 @@ codeAreaInput <- function (inputId='codebox', label, value = "", width = NULL, h
 
 
 
-
+# Function to render the table. There can be many parameters, so here is better
+renderDTfunc <- function(df) {
+  renderDT(
+    datatable(
+      df %>% select(description), 
+      filter = 'top', 
+      rownames = FALSE,
+      selection = "single"
+    ) 
+  )
+}
 
 
 
