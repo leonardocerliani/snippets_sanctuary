@@ -140,7 +140,8 @@ server <- function(input, output, session) {
         df$code[rownumba] <<- input$codebox
         
         # Show the updated table and save the snippet
-        output$allsnippets = renderDTfunc(df)
+        output$allsnippets <-  renderDTfunc(df)
+
         write.csv(df, 'snippets.csv', row.names = FALSE)
     })
     
@@ -169,10 +170,6 @@ server <- function(input, output, session) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-
-
-
-
 
 
 

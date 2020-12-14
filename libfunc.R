@@ -56,7 +56,12 @@ renderDTfunc <- function(df) {
       df %>% dplyr::select(description), 
       filter = 'top', 
       rownames = FALSE,
-      selection = "single"
+      selection = "single",
+      extensions = 'Buttons',
+      options = list(
+        dom = 'tBi',     # Blfrtip
+        buttons = c('csv')
+      )
     ) 
   )
 }
