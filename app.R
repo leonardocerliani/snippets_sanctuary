@@ -12,7 +12,6 @@ df_OLE <- read.csv('snippets.csv', stringsAsFactors=FALSE)
 
 library(shiny)
 library(dplyr)
-library(feather)
 library(DT)
 library(fresh)
 source("libfunc.R")
